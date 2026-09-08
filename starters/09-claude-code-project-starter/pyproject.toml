@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "todo-cli"
+version = "0.1.0"
+description = "A tiny SQLite-backed CLI todo list manager (demo project for the Claude Code project starter)."
+requires-python = ">=3.11"
+license = "MIT"
+dependencies = []
+
+[project.scripts]
+todo = "todo_cli.cli:main"
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/todo_cli"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
