@@ -2,22 +2,22 @@
 
 A collection of ~10 clonable, runnable starter codebases for modern AI engineering patterns — RAG, agents, memory, evals, and Claude Code workflows — built for the TAI Labs community.
 
-> **Status:** This library is being built out starter by starter. The table below tracks what's runnable today vs. what's still in progress. Each starter that's marked "In progress" has a folder with a scoped README describing what's planned; check back or follow the linked PR for updates.
+> **Status:** 9 of 10 starters are complete, tested, and runnable offline. The last (04) is landing in a follow-up commit on this same PR — see the table below.
 
 ## Choose a starter
 
 | # | Starter | Demonstrates | Difficulty | Primary tech | Ideal use case | Status |
 |---|---|---|---|---|---|---|
-| 01 | [Basic RAG](starters/01-basic-rag/) | Ingestion, chunking, hybrid retrieval, grounded generation with citations | Beginner | Python, Anthropic SDK | Q&A over your own docs | In progress |
-| 02 | [Multimodal RAG](starters/02-multimodal-rag/) | RAG across text + images/PDFs | Intermediate | Python, Anthropic SDK (vision) | Retrieval over mixed media | In progress |
-| 03 | [Agentic RAG](starters/03-agentic-rag/) | An agent that decides when/how to retrieve | Intermediate | Python, Anthropic SDK, tool use | Chat agents with optional grounding | In progress |
+| 01 | [Basic RAG](starters/01-basic-rag/) | Ingestion, chunking, hybrid retrieval, grounded generation with citations | Beginner | Python, Anthropic SDK | Q&A over your own docs | Complete |
+| 02 | [Multimodal RAG](starters/02-multimodal-rag/) | RAG across text + images | Intermediate | Python, Anthropic SDK (vision) | Retrieval over mixed media | Complete |
+| 03 | [Agentic RAG](starters/03-agentic-rag/) | An agent that decides when/how to retrieve | Intermediate | Python, Anthropic SDK, tool use | Chat agents with optional grounding | Complete |
 | 04 | [Multi-Agent Research](starters/04-multi-agent-research/) | Coordinator/researcher/critic/synthesizer pipeline | Advanced | Python, Anthropic SDK | Deep research over a topic | In progress |
-| 05 | [Long-Running Agent](starters/05-long-running-agent/) | Checkpointed, resumable, retryable background jobs | Advanced | Python, SQLite | Long async processing tasks | In progress |
-| 06 | [Memory Agent](starters/06-memory-agent/) | Session vs. persistent memory, retrieval-augmented recall | Intermediate | Python, SQLite | Agents that remember users across sessions | In progress |
-| 07 | [Tool-Using Agent](starters/07-tool-using-agent/) | Multi-tool routing, validation, bounded execution | Beginner | Python, Anthropic SDK | Function-calling agents | In progress |
-| 08 | [Agent Evals & Observability](starters/08-agent-evals-observability/) | Eval datasets, deterministic runners, traces, regression testing | Intermediate | Python | Measuring and guarding agent quality | In progress |
-| 09 | [Claude Code Project Starter](starters/09-claude-code-project-starter/) | A well-structured repo for working with Claude Code | Beginner | Claude Code, CLAUDE.md | Bootstrapping a new Claude Code project | In progress |
-| 10 | [Claude Code Skills](starters/10-claude-code-skills/) | Reusable skills: review, tests, debugging, docs | Intermediate | Claude Code Skills | Extending Claude Code for a team | In progress |
+| 05 | [Long-Running Agent](starters/05-long-running-agent/) | Checkpointed, resumable, retryable background jobs | Advanced | Python, SQLite | Long async processing tasks | Complete |
+| 06 | [Memory Agent](starters/06-memory-agent/) | Session vs. persistent memory, retrieval-augmented recall | Intermediate | Python, SQLite | Agents that remember users across sessions | Complete |
+| 07 | [Tool-Using Agent](starters/07-tool-using-agent/) | Multi-tool routing, validation, bounded execution | Beginner | Python, Anthropic SDK | Function-calling agents | Complete |
+| 08 | [Agent Evals & Observability](starters/08-agent-evals-observability/) | Eval datasets, deterministic runners, traces, regression testing | Intermediate | Python | Measuring and guarding agent quality | Complete |
+| 09 | [Claude Code Project Starter](starters/09-claude-code-project-starter/) | A well-structured repo for working with Claude Code | Beginner | Claude Code, CLAUDE.md | Bootstrapping a new Claude Code project | Complete |
+| 10 | [Claude Code Skills](starters/10-claude-code-skills/) | Reusable skills: review, tests, debugging, docs | Intermediate | Claude Code Skills | Extending Claude Code for a team | Complete |
 
 ## Quick start
 
