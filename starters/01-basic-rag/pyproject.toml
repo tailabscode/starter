@@ -1,0 +1,33 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "basic-rag"
+version = "0.1.0"
+description = "Minimal, production-shaped hybrid RAG pipeline: BM25 + dense embeddings fused with RRF, grounded citations, offline-first."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "anthropic>=0.69",
+    "python-dotenv>=1.0",
+    "numpy>=1.26",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[project.scripts]
+basic-rag = "basic_rag.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/basic_rag"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
