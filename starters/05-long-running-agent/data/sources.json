@@ -1,0 +1,22 @@
+[
+  {
+    "name": "source-alpha",
+    "url": "https://example.invalid/meridian/overview",
+    "content": "Project Meridian is a fictional research initiative started in 2019 by Northwind Labs. It combines 3 subsystems: a scheduler, a ledger, and a notification bus. By 2022 the project reported 12 pilot deployments across 4 simulated regions."
+  },
+  {
+    "name": "source-beta",
+    "url": "https://example.invalid/meridian/architecture",
+    "content": "The Meridian scheduler assigns work in rounds of 5 minutes. Northwind Labs measured a median round latency of 340 milliseconds in their synthetic benchmark. The ledger subsystem retains 90 days of history by default."
+  },
+  {
+    "name": "source-gamma",
+    "url": "https://example.invalid/meridian/incidents",
+    "content": "Between 2021 and 2023, Meridian's test environment recorded 7 simulated incidents, none rated above severity 3. The notification bus was the root cause in 4 of those 7 cases, prompting a rewrite in early 2023."
+  },
+  {
+    "name": "source-delta",
+    "url": "https://example.invalid/meridian/roadmap",
+    "content": "Northwind Labs' fictional roadmap for Meridian lists 2 goals for the next cycle: reduce median round latency below 200 milliseconds, and extend ledger retention to 180 days. Both are marked as stretch goals."
+  }
+]
