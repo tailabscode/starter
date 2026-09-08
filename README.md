@@ -2,7 +2,7 @@
 
 A collection of ~10 clonable, runnable starter codebases for modern AI engineering patterns — RAG, agents, memory, evals, and Claude Code workflows — built for the TAI Labs community.
 
-> **Status:** 9 of 10 starters are complete, tested, and runnable offline. The last (04) is landing in a follow-up commit on this same PR — see the table below.
+> **Status:** All 10 starters are complete, tested, and runnable offline.
 
 ## Choose a starter
 
@@ -11,7 +11,7 @@ A collection of ~10 clonable, runnable starter codebases for modern AI engineeri
 | 01 | [Basic RAG](starters/01-basic-rag/) | Ingestion, chunking, hybrid retrieval, grounded generation with citations | Beginner | Python, Anthropic SDK | Q&A over your own docs | Complete |
 | 02 | [Multimodal RAG](starters/02-multimodal-rag/) | RAG across text + images | Intermediate | Python, Anthropic SDK (vision) | Retrieval over mixed media | Complete |
 | 03 | [Agentic RAG](starters/03-agentic-rag/) | An agent that decides when/how to retrieve | Intermediate | Python, Anthropic SDK, tool use | Chat agents with optional grounding | Complete |
-| 04 | [Multi-Agent Research](starters/04-multi-agent-research/) | Coordinator/researcher/critic/synthesizer pipeline | Advanced | Python, Anthropic SDK | Deep research over a topic | In progress |
+| 04 | [Multi-Agent Research](starters/04-multi-agent-research/) | Coordinator/researcher/critic/synthesizer pipeline | Advanced | Python, Anthropic SDK | Deep research over a topic | Complete |
 | 05 | [Long-Running Agent](starters/05-long-running-agent/) | Checkpointed, resumable, retryable background jobs | Advanced | Python, SQLite | Long async processing tasks | Complete |
 | 06 | [Memory Agent](starters/06-memory-agent/) | Session vs. persistent memory, retrieval-augmented recall | Intermediate | Python, SQLite | Agents that remember users across sessions | Complete |
 | 07 | [Tool-Using Agent](starters/07-tool-using-agent/) | Multi-tool routing, validation, bounded execution | Beginner | Python, Anthropic SDK | Function-calling agents | Complete |
