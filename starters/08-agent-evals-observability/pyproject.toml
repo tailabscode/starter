@@ -1,0 +1,32 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "agent-evals"
+version = "0.1.0"
+description = "A starter for evaluating agent/LLM behaviour with real, runnable metrics, structured traces, and a CI-gateable pass/fail threshold."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "anthropic>=0.69",
+    "python-dotenv>=1.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[project.scripts]
+agent-evals = "agent_evals.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/agent_evals"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

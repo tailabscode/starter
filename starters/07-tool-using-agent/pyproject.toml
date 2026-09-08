@@ -1,0 +1,32 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "tool-using-agent"
+version = "0.1.0"
+description = "A clean, focused demonstration of tool/function calling: multiple tools, routing, validation, error handling, and bounded execution."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "anthropic>=0.69",
+    "python-dotenv>=1.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[project.scripts]
+tool-using-agent = "tool_using_agent.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/tool_using_agent"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

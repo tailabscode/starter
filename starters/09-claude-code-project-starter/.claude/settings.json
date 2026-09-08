@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "Read",
+      "Grep",
+      "Glob",
+      "Bash(uv run *)",
+      "Bash(uv pip install -e *)",
+      "Bash(uv venv*)",
+      "Edit(src/todo_cli/**)",
+      "Edit(tests/**)",
+      "Write(src/todo_cli/**)",
+      "Write(tests/**)"
+    ],
+    "ask": [
+      "Edit(pyproject.toml)",
+      "Edit(.claude/settings.json)",
+      "Edit(CLAUDE.md)",
+      "Bash(rm *)"
+    ],
+    "deny": [
+      "Bash(git push*)",
+      "Bash(curl*)",
+      "Bash(rm -rf /*)",
+      "Read(.env)",
+      "Read(**/*.env)"
+    ]
+  }
+}

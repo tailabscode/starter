@@ -1,0 +1,33 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "multimodal-rag"
+version = "0.1.0"
+description = "Hybrid RAG over text and images: vision-captioned images share one BM25 + dense index with text chunks, and get their real pixels re-attached at generation time."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "anthropic>=0.69",
+    "python-dotenv>=1.0",
+    "numpy>=1.26",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[project.scripts]
+multimodal-rag = "multimodal_rag.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/multimodal_rag"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
